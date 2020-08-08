@@ -10,6 +10,7 @@ export const BlogPostTemplate = ({
   content,
   contentComponent,
   description,
+  memo,
   tags,
   title,
   helmet,

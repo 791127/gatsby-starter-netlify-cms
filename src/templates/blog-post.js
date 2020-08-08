@@ -53,6 +53,7 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
+  memo: PropTypes.string,
   helmet: PropTypes.object,
 }
 
@@ -74,6 +75,7 @@ const BlogPost = ({ data }) => {
             />
           </Helmet>
         }
+        memo={post.frontmatter.memo}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
